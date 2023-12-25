@@ -1004,7 +1004,7 @@ values
     (1998, 'Doan Ngoc Tien', 'Doanngoctien200586200586', 'Tien200586', 'Doanngoctien200586200586@gmail.com', 'user'),
     (1999, 'Ngo Thi Thu Hang', 'ngothithuhang010610010610', 'Hang010610', 'ngothithuhang010610010610@gmail.com', 'user');
 
-insert into Product(id , product_Name, product_Quantity, product_Category, product_Price, product_Description, product_Image_Url)
+insert into product(id , product_Name, product_Quantity, product_Category, product_Price, product_Description, product_Image_Url)
 values
     (1, 'Wellness Soft Puppy Bites Natural Grain-Free Treats for Training, Dog Treats with Real Meat and DHA, No Artificial Flavors (Lamb & Salmon, 8-Ounce Bag)', 32, 'dog food', 25 ,'These grain-free puppy treats are ideal for training sessions and rewarding good behavior. They contain 6 calories per treat and support brain development with natural DHA from salmon. Made with minimal, high-quality ingredients like lamb and salmon, these all-natural treats are tailored for puppies and do not include wheat, wheat gluten, corn, soy, artificial colors, or preservatives. Produced in the USA, they are suitable for dogs of all sizes and activity levels.', 'https://m.media-amazon.com/images/I/71y+83aA83L._AC_SL1500_.jpg'),
     (2, 'JW Gripsoft Palm Nail Grinder for Dogs', 46, 'grooming', 17, 'Cordless, ergonomic trimmer fits in the palm of your hand Varying speed controls & 2 filing grits to suit all dogs LED light provides better visibility Nail guard protects hair & catches filings', 'https://m.media-amazon.com/images/I/71altY4lTlL._AC_SL1500_.jpg'),
@@ -1307,7 +1307,7 @@ values
     (299, 'Chuckit! Amphibious Bumper Toy - Large', 37, 'toy', 12, 'On land and in the water Chuckit! Amphibious toys are designed for exceptional visibility and performance.', 'https://m.media-amazon.com/images/I/71n3EOInyJL._AC_SL1500_.jpg'),
     (300, 'Cat Dancer Cat Dancer Toy', 26, 'toy', 2, 'Cat Dancer is the original interactive cat toy. Spring steel wire and rolled cardboard create an irresistible lure for cats and great fun for cat lovers.', 'https://m.media-amazon.com/images/I/61mLqtys4wL._AC_SL1500_.jpg');
 
-insert into Cart(id, user_Id,  product_Id, cart_Item_Quantity)
+insert into cart(id, user_Id,  product_Id, cart_Item_Quantity)
 values
     (1001, 1001, 1, 1),
     (1002, 1001, 2, 2),
@@ -1320,7 +1320,7 @@ values
     (1009, 1005, 5, 5),
     (1010, 1005, 5, 5);
 
-insert into Ordered_Product (id , user_Id, product_Id, ordered_Product_Quantity, ordered_Product_Date )
+insert into ordered_product (id , user_Id, product_Id, ordered_Product_Quantity, ordered_Product_Date )
 values
     (1001, 1001, 5, 5, current_date()),
     (1002, 1001, 4, 4, current_date()),
@@ -1331,7 +1331,7 @@ values
     (1007, 1004, 2, 3, current_date()),
     (1008, 1004, 1, 1, current_date());
 
-insert into Comment(id  , product_Id , user_Id , COMMENT_DESCRIPTION , comment_Date)
+insert into comment(id  , product_Id , user_Id , COMMENT_DESCRIPTION , comment_Date)
 values
     (10000, 49, 1454, 'This dog toy is perfect for gentle play or cuddling, providing comfort and companionship for my dog during quiet moments.', '2023-04-16'),
     (10001, 49, 1158, 'This dog toy has a built-in rope handle, providing a secure grip for both me and my dog during interactive play.', '2021-07-31'),

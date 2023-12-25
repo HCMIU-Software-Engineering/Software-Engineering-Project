@@ -22,4 +22,4 @@ export const getUserInformation = (username) => apiClientWithToken.get(`/users/$
 
 export const getUserChangeInformation = (username) => apiClientWithToken.get(`/user/userChangeInformation/${username}`)
 
-export const changeUserInformation = (user) => apiClientWithToken.put('/user/userChangeInformation/update')
+export const changeUserInformation = (user) => apiClientWithToken.put('/user/userChangeInformation/update', user)
