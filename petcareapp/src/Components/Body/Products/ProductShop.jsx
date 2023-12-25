@@ -37,7 +37,7 @@ export default function ProductShop() {
     }, [type]);
 
     async function retrieveProducts() {
-        await getProductByConstraint(token, type)
+        await getProductByConstraint(type)
             .then((response) => successfully(response))
             .catch((error) => console.log(error));
 

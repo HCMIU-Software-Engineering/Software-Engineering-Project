@@ -1,15 +1,10 @@
 
 import { apiClient, apiClientWithToken } from "./Axios";
 
-const token = localStorage.getItem("token");
 
-export const getProducts = (token) => {
-    return apiClient.get('/products', {
-        headers: {
-            'Authorization': `Bearer ${token}`
-        }
-    })
-}
+
+export const getProducts = () => apiClientWithToken.get('/products')
+
 
 
 export const getProductDetail = (id) => apiClientWithToken.get(`/product/${id}`)

@@ -27,7 +27,7 @@ export default function ({ handleOpenBookingFalse }) {
                     phoneNumber: data.phoneNumber,
                     typePet: data.typePet,
                 };
-
+                console.log(object)
                 postBooking(object)
                     .then(() => postSuccessfully())
                     .catch(() => alert('please try again'));

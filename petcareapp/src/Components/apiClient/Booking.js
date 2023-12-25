@@ -6,8 +6,4 @@ const token = localStorage.getItem("token");
 
 export const postBooking = (object) => apiClientWithToken.post('/bookingdate/post')
 
-export const getBookingHistoryByUsername = (username) => apiClient.get(`/bookingdate/all/user/${username}`, {
-    headers: {
-        'Authorization': `Bearer ${token}`
-    }
-})
+export const getBookingHistoryByUsername = (username) => apiClientWithToken.get(`/bookingdate/all/user/${username}`)

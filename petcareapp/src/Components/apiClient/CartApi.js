@@ -1,7 +1,7 @@
 
 import { apiClient , apiClientWithToken } from "./Axios";
 
-const token = localStorage.getItem("token");
+
 
 export const getProductOnCart = (username) => apiClientWithToken.get(`/cart/getItemOnCart/${username}`)
 
