@@ -162,7 +162,7 @@ then in vscode
 
 - #### HomePage
 <div align ="center">
-<img src="./DATA/images/Homepage.png" alt="">
+<img src="./DATA/images/Homepage1.png" alt="">
 </div>
 
 <br/>
