@@ -182,6 +182,7 @@ public class UserService {
             orderedProductDTOS.add(orderedProductDTO);
 
         }
+        System.out.println("💡 Ordered products" + orderedProductDTOS);
         return orderedProductDTOS;
 
 

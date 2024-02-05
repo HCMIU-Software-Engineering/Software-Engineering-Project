@@ -41,6 +41,7 @@ public class SecurityConfiguration {
                         .requestMatchers("/is/v1/api-docs/**").permitAll()
                         .requestMatchers("/is/v1/swagger-ui/**").permitAll()
                         .requestMatchers("/api/v2/admin").hasAnyAuthority("ADMIN")
+                        .requestMatchers("/api/v1/products/constraints/all").permitAll()
                         .requestMatchers(HttpMethod.OPTIONS,"/**")
                         .permitAll()
                         .anyRequest()
